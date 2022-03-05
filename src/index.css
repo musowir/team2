@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+
+.change {
+  margin:0px;
+  text-align:left;
+  color:#fff;
+  font-size:larger;
+  font-weight:300px;
+  overflow:hidden;
+  animation:bg 5s linear infinite;
+}
+
+.dropping-texts {
+  padding-top: 20px;
+  display: inline-block;
+  text-align: left;
+  height: 26px;
+  vertical-align: 0px;
+}
+
+.dropping-texts > div {
+  font-size:0px;
+  opacity:0;
+  position:absolute;
+  font-weight:400px;   
+  box-shadow: 0px 60px 25px -20px rgba(0,0,0,0.5);
+}
+
+.dropping-texts > div:nth-child(1) {
+  animation: roll 5s linear infinite 0s;
+}
+.dropping-texts > div:nth-child(2) {
+  animation: roll 5s linear infinite 1s;
+}
+.dropping-texts > div:nth-child(3) {
+  animation: roll 5s linear infinite 2s;
+}
+.dropping-texts > div:nth-child(4) {
+  animation: roll 5s linear infinite 3s;
+}
+.dropping-texts > div:nth-child(5) {
+  animation: roll 5s linear infinite 4s;
+}
+.dropping-texts > div:nth-child(6) {
+  animation: roll2 5s linear infinite 5s;
+}
+
+ @keyframes roll {
+  0% {
+    font-size:0px;
+    opacity:0;
+    margin-left:-30px;
+    margin-top:0px;
+    transform: rotate(-25deg);
+  }
+  3% {
+    opacity:1;
+    transform: rotate(0deg);
+  }
+  5% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+  }
+  20% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+    transform: rotate(0deg);
+  }
+  27% {
+    font-size:0px;
+    opacity:0.5;
+    margin-left:20px;
+    margin-top:100px;
+  }
+  100% {
+    font-size:0px;
+    opacity:0;
+    margin-left:-30px;
+    margin-top:0px;
+    transform: rotate(15deg);
+  }
+}
+/* 
+@keyframes bg {
+  0% {color: #f37cb3;}
+  3% {color: #82c4f3;}
+  20% {color: #85c4f1;}
+  23% {color: #d182f3;}
+  40% {color: #d186f1;}
+  43% {color: #baec80;}
+  60% {color: #b7f174;}
+  63% {color: #f39e6d;}
+  80% {color: #f3ac69;}
+  83% {color: #eff177;}
+  100% {color: #f3e77d;}
+} */
+
+
+.card-body a{
+  border-radius: 50px;
+}
+.card {
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    user-select: none;
+    z-index: 10;
+    border-radius: 10px;
+    overflow: hidden
+}
+
+.img2{
+  transition: all 0.5s ease;
+}
+.img2:hover{
+  transform: scale(1.09);
+}
+@keyframes popBackground {
+  0% {
+      height: 20px;
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%
+  }
+
+  50% {
+      height: 80px;
+      border-top-left-radius: 75%;
+      border-top-right-radius: 75%
+  }
+
+  75% {
+      height: 160px;
+      border-top-left-radius: 85%;
+      border-top-right-radius: 85%
+  }
+
+  100% {
+      height: 320px;
+      border-top-left-radius: 100%;
+      border-top-right-radius: 100%
+  }
+}
+
+.card:hover {
+    transform: scale(1.09);
+    box-shadow: rgba(0, 0, 0, 0) 0px 5px 10px
+}
+
+
+@keyframes popBackground {
+    0% {
+        height: 20px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%
+    }
+
+    50% {
+        height: 80px;
+        border-top-left-radius: 75%;
+        border-top-right-radius: 75%
+    }
+
+    75% {
+        height: 160px;
+        border-top-left-radius: 85%;
+        border-top-right-radius: 85%
+    }
+
+    100% {
+        height: 320px;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%
+    }
+}
